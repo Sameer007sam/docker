@@ -1,3 +1,2 @@
-FROM nginx
-ADD docker pull nginx
-RUN docker run -d --name sameer -p 123:80 nginx
+FROM httpd
+COPY index.html /usr/local/apache2/htdocs/
